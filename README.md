@@ -1,76 +1,53 @@
-# Building Damage Assessment Expert System
+🛠 Technologies Used
 
-An expert system designed to assess building damage after war or natural disasters using a hybrid approach that combines **Fuzzy Logic** and **Probabilistic Reasoning (Bayesian Networks)**.
+Python
 
-## 📖 Overview
-Assessing building damage after conflicts or disasters is complex due to uncertainty, imprecise data, and multiple interacting damage factors. Traditional manual inspections are time-consuming and subjective.
+Fuzzy Logic
 
-This project proposes an **automated expert system** that evaluates building damage severity by integrating:
-- Fuzzy Logic to handle imprecise inputs
-- Bayesian Networks to model dependencies and probabilities
+Bayesian Networks
 
-The system outputs a **final damage score and classification**:
-- Minor Damage
-- Moderate Damage
-- Severe Damage
+Jupyter Notebook
 
-## 🧠 System Methodology
+✅ Advantages
 
-### 1. Fuzzy Logic Module
-Handles uncertain and imprecise inputs using membership functions.
+Handles uncertainty and incomplete data
 
-**Input Variables:**
-- Crack Width
-- Leaning Angle
-- Roof Sagging
-- Foundation Cracks
-- Fire Level
+Reduces reliance on manual inspections
 
-**Output:**
-- Damage Severity Score (0–10)
+Automated and scalable
 
-Damage Classification:
-- 0 – 4 → Minor
-- 4 – 8 → Moderate
-- 8 – 10 → Severe
+Suitable for post-war and disaster recovery scenarios
 
-### 2. Probabilistic Reasoning (Bayesian Network)
-Models dependencies between damage factors and estimates damage probabilities.
+⚠ Limitations
 
-**Key Features:**
-- Nodes represent damage factors
-- Conditional Probability Distributions (CPDs)
-- Variable Elimination for inference
+Requires reliable input data
 
-**Output:**
-- Probability of each damage level
-- Most likely damage category
+Limited number of damage factors
 
-### 3. Hybrid Integration
-The final damage score is computed using a **weighted average**:
-- 50% Fuzzy Logic result
-- 50% Bayesian Network result
+Simplified real-world assumptions
 
-## 📊 Example Input & Output
+🚀 Applications
 
-**Sample Inputs:**
-- Crack Width: 4 mm
-- Leaning Angle: 1.5%
-- Roof Sagging: 6 cm
-- Foundation Cracks: 7 mm
-- Fire Level: 50%
+Post-war reconstruction planning
 
-**Results:**
-- Fuzzy Score: 5.53
-- Bayesian Result: Moderate Damage (60%)
-- Final Score: 6.77
-- Final Classification: **Moderate Damage**
+Disaster damage assessment
 
-## 🗂 Project Structure
+Urban safety and planning
 
-```text
-├── Building_Damage_Expert_System_Code.ipynb
-├── Building_Damage_Assessment_Report.pdf
-├── Building_Damage_Knowledge_Base.pdf
-├── Expert_System_Approach_Presentation.pptx
-└── README.md
+Decision support for authorities
+
+🔮 Future Work
+
+Add environmental and functional damage factors
+
+Validate results with real-world datasets
+
+Integrate machine learning for improved predictions
+
+Develop a graphical user interface (GUI)
+
+📚 References
+
+FEMA P-154
+
+Eurocode 8 (CEN)
